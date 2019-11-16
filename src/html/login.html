@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/common.min.css">
+    <link rel="stylesheet" href="../css/login.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://statics.oneplus.cn/ov/assets/images/favicon.ico?20191001163704">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <script src="../../node_modules/requirejs/require.js" data-main="../js/applogin"></script>
+    <title>OnePlus</title>
+</head>
+
+<body>
+    <header></header>
+    <!-- 主体 -->
+    <main id="main">
+        <div id="login">
+            <h1>登录</h1>
+            <i class="false">用户名或密码错误</i>
+            <!-- 手机号 -->
+            <div class="item username">
+                <input type="text" placeholder="手机／邮箱／用户名" name="phone" id="phone">
+            </div>
+            <!-- 密码 -->
+            <div class="item password">
+                <input type="password" name="password" placeholder="密码" id="password">
+                <span class="iconfont see">&#xe624;</span>
+            </div>
+            <!-- <div class="item">滑块验证</div> -->
+
+            <!-- 登陆按钮 -->
+            <div class="item submit-box">
+                <button type="submit" class="submit">确定</button>
+                <span></span>
+            </div>
+            <!-- 其他操作 -->
+            <p class="style">
+                <a href="javascript:;">手机短信登录</a>
+                <i></i>
+                <a href="./reg.html">注册</a>
+                <i></i>
+                <a href="javascript:;">忘记密码</a>
+            </p>
+            <!-- 其他登录方式 -->
+            <span class="others">选择其他方式登录</span>
+            <!-- 图标 -->
+            <div class="others-icon">
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-weibo2"></use>
+                            </svg>
+                </a>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-QQ"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixindenglu"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <!-- 浮窗 -->
+    <div class="air-view">
+        登陆成功！
+    </div>
+</body>
+
+
+</html>

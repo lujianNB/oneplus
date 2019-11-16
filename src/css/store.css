@@ -1,0 +1,251 @@
+#banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#banner .imgbox {
+  width: 100%;
+  height: 295px;
+  overflow: hidden;
+}
+
+#banner .imgbox .img {
+  width: 100%;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  height: 295px;
+}
+
+#banner .imgbox .show {
+  display: block;
+}
+
+#banner .pre,
+#banner .next {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  border-radius: 50%;
+  background-color: rgba(216, 216, 216, 0.2);
+  z-index: 1;
+}
+
+#banner .pre {
+  left: 9%;
+}
+
+#banner .pre i {
+  left: 21px;
+  top: 19px;
+  transform: rotate(-45deg);
+}
+
+#banner .pre:hover i {
+  opacity: 1;
+}
+
+#banner .next {
+  right: 9%;
+}
+
+#banner .next i {
+  left: 16px;
+  top: 19px;
+  transform: rotate(135deg);
+}
+
+#banner .next:hover i {
+  opacity: 1;
+}
+
+#banner i {
+  content: "";
+  display: block;
+  border-left: 2px solid #101920;
+  border-top: 2px solid #101920;
+  opacity: .5;
+  transition: .25s;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+
+#product-nav {
+  height: 60px;
+  width: 100%;
+}
+
+#product-nav .nav-box {
+  margin-left: 50%;
+}
+
+#product-nav .nav-box .selected,
+#product-nav .nav-box .all-models,
+#product-nav .nav-box .sort {
+  float: left;
+}
+
+#product-nav .nav-box .selected h3,
+#product-nav .nav-box .all-models h3,
+#product-nav .nav-box .sort h3 {
+  font-size: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 34px 0 16px;
+  position: relative;
+}
+
+#product-nav .nav-box .selected h3 i,
+#product-nav .nav-box .all-models h3 i,
+#product-nav .nav-box .sort h3 i {
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  right: 10px;
+  top: 50%;
+  transform: translate(-5px, -5px) rotate(135deg);
+  transition: .25s;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+#product-nav .nav-box .selected h3 .show,
+#product-nav .nav-box .all-models h3 .show,
+#product-nav .nav-box .sort h3 .show {
+  display: block;
+}
+
+#product-nav .nav-box .selected h3 ul,
+#product-nav .nav-box .all-models h3 ul,
+#product-nav .nav-box .sort h3 ul {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  min-width: 180px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#product-nav .nav-box .selected h3 ul li,
+#product-nav .nav-box .all-models h3 ul li,
+#product-nav .nav-box .sort h3 ul li {
+  font-size: 16px;
+  line-height: 24px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #828282;
+}
+
+#product-nav .nav-box .selected h3 ul li:hover,
+#product-nav .nav-box .all-models h3 ul li:hover,
+#product-nav .nav-box .sort h3 ul li:hover {
+  background-color: #f6f6f6;
+}
+
+#product-nav .nav-box .selected h3 ul .active,
+#product-nav .nav-box .all-models h3 ul .active,
+#product-nav .nav-box .sort h3 ul .active {
+  background-color: #f6f6f6;
+}
+
+#product > i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #bfbfbf;
+}
+
+#product .p-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#product .p-list li {
+  background-color: #f9f9f9;
+  width: 25%;
+  border-right: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  position: relative;
+}
+
+#product .p-list li:hover {
+  background-color: #fff;
+}
+
+#product .p-list li a {
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 492px;
+  text-align: center;
+}
+
+#product .p-list li a img {
+  width: 100%;
+}
+
+#product .p-list li a h3 {
+  font-size: 14px;
+}
+
+#product .p-list li a p del {
+  color: #828282;
+}
+
+#product .p-list li a i {
+  position: absolute;
+  display: block;
+  background-color: #eb0028;
+  font-size: 10px;
+  color: #fff;
+  line-height: 2em;
+  padding: 0 0.5em;
+  top: 20px;
+  right: 20px;
+}
+
+#product .p-list li:nth-last-child(4n+1) {
+  border-right: 0;
+}
+
+#promise {
+  width: 100%;
+}
+
+#promise .container ul {
+  display: flex;
+  width: 100%;
+}
+
+#promise .container ul li {
+  width: 25%;
+}
+
+#promise .container ul li a {
+  display: flex;
+  flex-direction: column;
+  height: 172px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+#promise .container ul li a span {
+  font-size: 44px;
+  color: #7db93f;
+  margin-bottom: 10px;
+}

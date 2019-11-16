@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/common.min.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/reg.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://statics.oneplus.cn/ov/assets/images/favicon.ico?20191001163704">
+    <script src="../../node_modules/requirejs/require.js" data-main="../js/appreg"></script>
+    <title>OnePlus</title>
+</head>
+
+<body>
+    <header></header>
+    <!-- 主体 -->
+    <main id="main">
+        <div id="reg">
+            <h1>注册</h1>
+            <!-- 账户已存在弹窗 -->
+            <i class="hasname">账户已存在</i>
+            <!-- 手机号 -->
+            <div class="item username">
+                <input type="text" placeholder="手机号" name="phone" id="phone">
+                <label for="username">+86</label>
+                <div class="u-rule">
+                    <span>请输入11位手机号码</span>
+                </div>
+            </div>
+            <!-- 密码 -->
+            <div class="item password">
+                <input type="password" name="password" placeholder="密码" id="password">
+                <span class="iconfont see">&#xe624;</span>
+                <!-- 正则弹窗 -->
+                <div class="p-rule">
+                    <span><i></i>6 ～16 位字符</span>
+                    <span><i></i>包含字母</span>
+                    <span><i></i>包含数字</span>
+                </div>
+            </div>
+            <!-- <div class="item">滑块验证</div> -->
+            <div class="agree">
+                <p>注册 OnePlus，即表示你同意 OnePlus 的</p>
+                <p><a href="javascript:;">使用条款</a>和<a href="javascript:;">隐私政策</a></p>
+            </div>
+
+            <div class="item submit-box">
+                <button type="submit" class="submit" disabled='disabled'>创建账号</button>
+                <span></span>
+            </div>
+
+            <div class="login">
+                <a href="./login.html">登录</a>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <!-- 浮窗 -->
+    <div class="air-view">
+        注册成功！
+    </div>
+</body>
+
+
+</html>

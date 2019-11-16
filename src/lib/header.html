@@ -1,0 +1,126 @@
+<!-- 头部 -->
+<header id="header">
+    <div class="container clear">
+        <h1 class="logo">
+            <a href="./index.html">
+                <img src="../images/store/logo.png" alt="OnePlus">
+            </a>
+        </h1>
+        <!-- 头部导航 -->
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="javascript:; ">OnePlus 7 Pro</a>
+                </li>
+                <li>
+                    <a href="javascript:; ">OnePlus 7</a>
+                </li>
+                <li class="store">
+                    <a href="../html/store.html">商城</a>
+                    <div class="sup-nav">
+                        <!-- 商城二级导航 -->
+                        <div class="container">
+                            <ul class="clear">
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="iconfont ">&#xe697;</span>
+                                        <i>手机</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="iconfont ">&#xe60c;</span>
+                                        <i>耳机</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="iconfont ">&#xe611;</span>
+                                        <i>壳/膜</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="iconfont ">&#xe620;</span>
+                                        <i>适配器/数据线</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="iconfont ">&#xe648;</span>
+                                        <i>套装</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="iconfont ">&#xe698;</span>
+                                        <i>生活馆</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:; ">品牌</a>
+                </li>
+                <li>
+                    <a href="javascript:; ">服务</a>
+                </li>
+                <li>
+                    <a href="javascript:; ">论坛</a>
+                </li>
+                <li>
+                    <a href="javascript:; ">零售店</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 头部右方 -->
+        <div class="header-r">
+            <ul>
+                <!-- 登录按钮 -->
+                <li class="login">
+                    <a href="./login.html">
+                        <span class="iconfont ">&#xe60a;</span>
+                    </a>
+                    <div class="login-box">
+                        <a href="javascript:;">订单</a>
+                        <a href="javascript:;">账户</a>
+                        <a href="javascript:;">推荐有礼</a>
+                        <div class="login-btn">
+                            <a href="../html/login.html">登录</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 购物车按钮 -->
+                <li class="car">
+                    <a href="./car.html">
+                        <span class="iconfont ">&#xe68c;</span>
+                    </a>
+                </li>
+                <!-- 搜索按钮 -->
+                <li>
+                    <a href="javascript:;"><span class="iconfont " style="font-weight: 900">&#xe652;</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</header>
+
+<script>
+    $(function() {
+        // 如果登录，登录按钮转为登出按钮
+        if (cookie.get('isLogin')) {
+            var elm = `<a href="javascript:;">登出${cookie.get('phone')}</a>`;
+            $('.login-btn').html(elm);
+            $('.login>a').attr('href', 'javascript:;');
+        }
+        // 绑定登出事件：清除cookie并刷新
+        $('.login-btn').on('click', function() {
+            cookie.remove('isLogin');
+            cookie.remove('phone');
+            location.reload();
+        })
+    })
+</script>
