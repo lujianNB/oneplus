@@ -3,6 +3,7 @@ require.config({
         jquery: "../../node_modules/jquery/dist/jquery.min",
         lazyload: "./jquery.lazyload",
         banner: "./banner",
+        cookie: "./cookie",
         store: "./store"
     },
     shim: {
@@ -11,6 +12,6 @@ require.config({
         store: ['jquery', 'banner', 'lazyload']
     }
 });
-require(['jquery', 'banner', 'lazyload', 'store'], function($, banner, lazyload, store) {
+require(['jquery', 'banner', 'lazyload', 'cookie', 'store'], function($, banner, lazyload, cookie, store) {
     store.store();
 });

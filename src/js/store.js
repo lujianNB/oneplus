@@ -1,9 +1,23 @@
-define(['jquery', 'banner', 'lazyload'], function() {
+define(['jquery', 'banner', 'lazyload', 'cookie'], function() {
     return {
         store: function() {
             // 加载头尾
-            $('header').load('../lib/header.html');
+            $('header').load('../lib/header.html', function() {
+                // 如果登录，登录按钮转为登出按钮
+                if (cookie.get('isLogin')) {
+                    var elm = `<a href="javascript:;">登出${cookie.get('phone')}</a>`;
+                    $('.login-btn').html(elm);
+                    $('.login>a').attr('href', 'javascript:;');
+                }
+                // 绑定登出事件：清除cookie并刷新
+                $('.login-btn').on('click', function() {
+                    cookie.remove('isLogin');
+                    cookie.remove('phone');
+                    location.reload();
+                })
+            });
             $('footer').load('../lib/footer.html');
+
 
             // bnner图
             $('#banner').fade();

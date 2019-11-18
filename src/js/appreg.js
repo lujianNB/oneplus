@@ -2,6 +2,7 @@ require.config({
     paths: {
         jquery: "../../node_modules/jquery/dist/jquery.min",
         md5: "./jquery.md5",
+        cookie: "./cookie",
         reg: "./reg"
     },
     shim: {
@@ -9,6 +10,6 @@ require.config({
         reg: ['jquery', 'md5']
     }
 });
-require(['jquery', 'md5', 'reg'], function($, md5, reg) {
+require(['jquery', 'md5', 'cookie', 'reg'], function($, md5, cookie, reg) {
     reg.reg();
 })
