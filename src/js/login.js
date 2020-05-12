@@ -36,14 +36,21 @@ define(['jquery', 'md5', 'cookie'], function() {
                             $('.false').css('display', 'block');
                         } else {
                             // 登陆成功弹窗
+                            debugger
                             $('.air-view').fadeIn(600).fadeOut(600);
                             // 存cookie
                             cookie.set('isLogin', 'true', 1);
                             cookie.set('phone', $('#phone').val(), 1);
                             // 弹窗完成后跳转
-                            setTimeout(function() {
-                                location.href = './store.html';
-                            }, 1200)
+                            if(cookie.get('phone') === '15055449475') {
+                                setTimeout(function() {
+                                    location.href = './admin.html';
+                                }, 1200)
+                            } else {
+                                setTimeout(function() {
+                                    location.href = './store.html';
+                                }, 1200)
+                            }
                         }
                     }
                 });

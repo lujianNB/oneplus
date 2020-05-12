@@ -177,8 +177,7 @@
 #product .p-list li {
   background-color: #f9f9f9;
   width: 25%;
-  border-right: 1px solid #bfbfbf;
-  border-bottom: 1px solid #bfbfbf;
+  border: 1px solid #bfbfbf;
   position: relative;
 }
 

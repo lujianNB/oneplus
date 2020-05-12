@@ -69,44 +69,49 @@ samp {
 }
 
 #header {
+  background-color: #0054A7;
   position: relative;
   width: 100%;
 }
 
-#header .container .logo {
+#header > .container {
+  background: url(../images/top.png) no-repeat 0 0/100% 100%;
+}
+
+#header > .container .logo {
   float: left;
   width: 60px;
   height: 60px;
   padding: 13px 15px 17px;
 }
 
-#header .container .logo img {
+#header > .container .logo img {
   width: 100%;
   display: block;
 }
 
-#header .container .header-nav {
+#header > .container .header-nav {
   text-align: center;
   margin-left: 250px;
   width: fit-content;
 }
 
-#header .container .header-nav > ul > li {
+#header > .container .header-nav > ul > li {
   float: left;
 }
 
-#header .container .header-nav > ul > li > a {
+#header > .container .header-nav > ul > li > a {
   line-height: 60px;
   height: 60px;
   padding: 0 21px;
   border-bottom: 2px solid transparent;
 }
 
-#header .container .header-nav > ul > li > a:hover {
+#header > .container .header-nav > ul > li > a:hover {
   border-bottom-color: red;
 }
 
-#header .container .header-nav .store .sup-nav {
+#header > .container .header-nav .store .sup-nav {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -117,16 +122,16 @@ samp {
   left: 0;
 }
 
-#header .container .header-nav .store .sup-nav ul {
+#header > .container .header-nav .store .sup-nav ul {
   width: fit-content;
   margin: 0 auto;
 }
 
-#header .container .header-nav .store .sup-nav ul li {
+#header > .container .header-nav .store .sup-nav ul li {
   float: left;
 }
 
-#header .container .header-nav .store .sup-nav ul li a {
+#header > .container .header-nav .store .sup-nav ul li a {
   display: flex;
   width: 150px;
   height: 140px;
@@ -134,34 +139,34 @@ samp {
   justify-content: center;
 }
 
-#header .container .header-nav .store .sup-nav ul li a span {
+#header > .container .header-nav .store .sup-nav ul li a span {
   display: inline-block;
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-#header .container .header-nav .store .sup-nav ul li a i {
+#header > .container .header-nav .store .sup-nav ul li a i {
   font-size: 14px;
 }
 
-#header .container .header-nav .store .sup-nav ul li a:hover {
+#header > .container .header-nav .store .sup-nav ul li a:hover {
   color: #EB0028;
 }
 
-#header .container .header-nav .store:hover .sup-nav {
+#header > .container .header-nav .store:hover .sup-nav {
   display: block;
 }
 
-#header .container .header-r {
+#header > .container .header-r {
   float: right;
 }
 
-#header .container .header-r li {
+#header > .container .header-r li {
   position: relative;
   float: left;
 }
 
-#header .container .header-r li > a {
+#header > .container .header-r li > a {
   text-align: center;
   width: 60px;
   height: 60px;
@@ -169,19 +174,19 @@ samp {
   border-bottom: 2px solid transparent;
 }
 
-#header .container .header-r li > a:hover {
+#header > .container .header-r li > a:hover {
   border-bottom-color: red;
 }
 
-#header .container .header-r li > a span {
+#header > .container .header-r li > a span {
   font-size: 22px;
 }
 
-#header .container .header-r .login:hover .login-box {
+#header > .container .header-r .login:hover .login-box {
   display: block;
 }
 
-#header .container .header-r .login .login-box {
+#header > .container .header-r .login .login-box {
   padding-top: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 320px;
@@ -194,7 +199,7 @@ samp {
   display: none;
 }
 
-#header .container .header-r .login .login-box a {
+#header > .container .header-r .login .login-box a {
   margin: 0 20px;
   height: 50px;
   border-bottom: 1px solid #dfdfdf;
@@ -202,17 +207,17 @@ samp {
   color: #828282;
 }
 
-#header .container .header-r .login .login-box a:hover {
+#header > .container .header-r .login .login-box a:hover {
   color: #000;
 }
 
-#header .container .header-r .login .login-box a:last-child {
+#header > .container .header-r .login .login-box a:last-child {
   color: #0099cc;
   border: 0;
   margin-top: 20px;
 }
 
-#header .container .header-r .login .login-box a:last-child:hover {
+#header > .container .header-r .login .login-box a:last-child:hover {
   text-decoration: underline;
 }
 

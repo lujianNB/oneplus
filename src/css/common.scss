@@ -73,9 +73,11 @@ samp {
 }
 
 #header {
+    background-color: #0054A7;
     position: relative;
     width: 100%;
-    .container {
+    &>.container {
+        background: url(../images/top.png) no-repeat 0 0/100% 100%;
         .logo {
             float: left;
             width: 60px;
